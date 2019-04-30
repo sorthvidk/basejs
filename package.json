@@ -1,0 +1,44 @@
+{
+  "name": "basejs",
+  "version": "0.0.1",
+  "description": "Very slim ES6 javascript framework. Based around a View class. Basejs is aimed at progressive enhanced web development",
+  "main": "dist/base.js",
+  "scripts": {
+    "test": "mocha --require babel-register test/**/*.test.js",
+    "dev": "webpack-dev-server --inline -d",
+    "build": "webpack",
+    "deploy": "git reset --hard; git checkout master; git pull"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sorthvidk/basejs"
+  },
+  "bugs": {
+    "url": "https://bitbucket.org/sorthvid_dk/kerneljs/issues"
+  },
+  "keywords": [
+    "ES6",
+    "simple",
+    "extendable",
+    "progressive enhancement"
+  ],
+  "author": "sorthvid",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.1.6",
+    "@babel/plugin-proposal-object-rest-spread": "^7.3.2",
+    "@babel/preset-env": "^7.1.6",
+    "chai": "^3.5.0",
+    "core-js": "^2.4.1",
+    "global": "^4.3.1",
+    "jsdom": "^10.0.0",
+    "jsdom-global": "2.1.1",
+    "mocha": "^3.1.2",
+    "mocha-jsdom": "^1.1.0",
+    "webpack": "^4.30.0"
+  },
+  "dependencies": {
+    "es6-event-emitter": "^1.5.2",
+    "webpack-dev-server": "^3.3.1"
+  }
+}

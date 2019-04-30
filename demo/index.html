@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>KernelJS demopage</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<style>
+		.move {
+			background-color: tomato; padding: 20px; width: 30px; will-change: transform; position: absolute; right:100px;
+		}
+		.overlay {
+			position: fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.2);
+		}
+		.modal {
+			background: white;padding:60px;width:400px;
+		}
+	</style>
+	<body>
+
+		<!-- Add your site or application content here -->
+		<div class="box" style="padding:10px;background:grey;margin:10px 0;">
+			<h3>This is box 1</h3>
+			<a href="#" class="button js--button-1">TEST scrollTo box 3</a>
+			<a href="#" class="button js--button-2">TEST remove box 2</a>
+		</div>
+
+		<div class="box" style="padding:10px;background:grey;margin:10px 0;">
+			<p>This is box 2</p>
+			<a href="#" class="button js--button-3">TEST view action</a>
+			<a href="#" class="button js--button-4">TEST open modal</a>
+		</div>
+
+
+		<article class="test-class-2" id="testId1" style="background:#eee;height:600px;">
+			<section class="test-class-2" id="testId2">
+				<aside class="test-class-3" id="testId3">
+					<table id="table">
+						<tr>
+							<td class="one">dd</td>
+							<td class="two">dd</td>
+						</tr>
+						<tr>
+							<td class="one">dd</td>
+							<td class="two">dd</td>
+						</tr>
+						<tr>
+							<td class="one">dd</td>
+							<td class="two">dd</td>
+						</tr>
+						<tr>
+							<td class="one">dd</td>
+							<td class="two">dd</td>
+						</tr>
+						<tr>
+							<td class="one">dd</td>
+							<td class="two">dd</td>
+						</tr>
+					</table>
+				</aside>
+			</section>
+
+		</article>
+
+		<div class="box" style="padding:10px;background:grey;margin:10px 0;">
+			<h4>This is box 3</h4>
+			<a href="#" class="button js--button-5">TEST scrollTo box 1</a>
+		</div>
+
+		<div class="container"></div>
+
+		<script src="/dist/test.js"></script>
+	</body>
+</html>
